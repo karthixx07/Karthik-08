@@ -3,6 +3,15 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
   }
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+}
   :root {
   --dark-bg: #0a0a0a;
   --darker-bg: #050505;
@@ -12,6 +21,7 @@
   }
   body {
     background-color: var(--dark-bg);
+    padding-top: 90px;
     color:var(--text);
     line-height: 1.6;
     overflow-x: hidden;
@@ -112,6 +122,9 @@
 
   .profile-image {
     width: 400px;
+    position:relative;
+   margin-top: 100px;
+    z-index: 1;
     height: 400px;
     border-radius: 50%;
     object-fit: cover;
